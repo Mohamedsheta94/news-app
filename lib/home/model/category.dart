@@ -6,13 +6,11 @@ class Category {
   String title;
   String imageUrl;
   Color color;
-
   Category(
       {required this.id,
       required this.color,
       required this.title,
       required this.imageUrl});
-
   static List<Category> getCategories() {
     return [
       Category(

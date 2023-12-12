@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news/home/model/category.dart';
-import 'package:news/home/model/category_item.dart';
+import 'package:news/category_details/category_item.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CategoryFragment extends StatelessWidget {
   var categoriesList = Category.getCategories();
@@ -16,7 +17,7 @@ class CategoryFragment extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'Pick your category \n of interest',
+            AppLocalizations.of(context)!.pickYourCategoryOfInterest,
             style: Theme.of(context).textTheme.titleMedium,
           ),
           SizedBox(

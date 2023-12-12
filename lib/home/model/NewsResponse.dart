@@ -8,11 +8,12 @@ class NewsResponse {
   NewsResponse(
       {this.status, this.totalResults, this.articles, this.message, this.code});
 
-  NewsResponse.fromJson(dynamic json) {
+   NewsResponse.fromJson(dynamic json) {
     status = json['status'];
     message = json['message'];
     code = json['code'];
-    articles = json['articles'];
+    // articles = json['articles'];
+    articles = <News>[];
     totalResults = json['totalResults'];
     if (json['articles'] != null) {
       articles = [];

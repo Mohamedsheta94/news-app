@@ -25,15 +25,19 @@ class MyTheme {
         backgroundColor: primaryColor,
       ),
       textTheme: TextTheme(
-          titleLarge: TextStyle(
-              fontSize: 22, fontWeight: FontWeight.bold, color: whiteColor),
+        titleLarge: TextStyle(
+            fontSize: 22, fontWeight: FontWeight.bold, color: whiteColor),
         titleMedium: TextStyle(
-          fontSize: 20,fontWeight: FontWeight.bold,
-
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
         ),
         titleSmall: TextStyle(
-          fontSize: 18,fontWeight: FontWeight.bold,
-
-        )
-      ));
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+          focusedBorder: OutlineInputBorder(borderSide: BorderSide.none),
+          enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
+          activeIndicatorBorder: BorderSide.none));
 }
